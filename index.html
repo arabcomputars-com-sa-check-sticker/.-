@@ -57,7 +57,7 @@
             font-size: 1.5rem;
             font-weight: 700;
             text-align: center;
-            margin: 20px 0;
+            margin: 20px 0 40px 0;
             letter-spacing: 1px;
         }
 
@@ -67,7 +67,7 @@
             font-size: 1rem;
             line-height: 1.8;
             max-width: 800px;
-            margin: 0 auto 30px auto;
+            margin: 20px auto 30px auto; /* تقليل المسافة العلوية */
         }
         
         .arabic-text {
@@ -79,7 +79,7 @@
         
         .warning-message {
             color: red;
-            margin: 25px 0;
+            margin: 20px 0; /* تقليل المسافة */
             padding: 0;
             text-align: center;
             font-size: 0.9rem;
@@ -114,7 +114,7 @@
             width: 100%;
             max-height: 200px;
             object-fit: cover;
-            margin-bottom: 15px;
+            margin: 40px 0;
         }
 
         .input-instruction {
@@ -354,9 +354,11 @@
 
         <h2>Warranty sticker validation</h2>
 
+        <!-- الصورة الأولى -->
+        <img src="https://i.postimg.cc/66D66Vst/Warning-tag-A.png" alt="Website Banner" class="banner">
+
         <div class="warning-message">
             <p class="warning-text-bold">
-                <img src="https://i.postimg.cc/66D66Vst/Warning-tag-A.png" alt="Website Banner" class="banner">
                 نحذر عملائنا الكرام من وجود ملصق ضمان مزور يحتوي على رمز إستجابة سريع يوجه المستخدمين لصفحة إلكترونية مزورة تشبه هذه الصفحة.<br>
                 تأكد دائمًا من عنوان الصفحة الصحيح:
                 <span class="warning-url">arabcombuter.com.sa/check-sticker</span>
@@ -373,6 +375,7 @@
             <span class="arabic-text">تأكد إذا كان ملصق الضمان الموجود على منتجك هو ملصق أصلي أو مزيف</span>
         </p>
 
+        <!-- الصورة الثانية -->
         <img src="https://i.postimg.cc/1XhL17mC/Screenshot-20251026-022901.jpg" alt="Website Banner" class="banner">
 
         <p class="input-instruction">
@@ -400,7 +403,7 @@
     <div class="links">
         <div class="left-section">
             <div>
-                <img src="https://i.postimg.cc/SKC7Wqhm/Screenshot-com-android-chrome.png" alt="بانر الموقع" class="banner">
+                <img src="https://i.postimg.cc/SKC7Wqhm/Screenshot-com-android-chrome.png" alt="بانر الموقع" class="banner" style="margin-bottom: 20px;"> <!-- إضافة مسافة تحت الصورة -->
             </div>
         </div>
 
@@ -491,6 +494,7 @@
         // تحميل الرموز على دفعات
         async function loadCodesInBatches() {
             console.log("بدء تحميل الرموز...");
+
             
             // تقسيم الرموز إلى دفعات (يمكنك إضافة المزيد من الرموز هنا)
             const batches = [
@@ -80499,7 +80503,7 @@
 "W5PDIK5Z98A",], 
             ];
 
-            let totalLoaded = 0;
+              let totalLoaded = 0;
             
             for (let i = 0; i < batches.length; i++) {
                 const batch = batches[i];
@@ -80568,4 +80572,4 @@
         });
     </script>
 </body>
-</html>
+</html>  
