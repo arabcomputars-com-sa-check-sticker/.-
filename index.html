@@ -194,35 +194,66 @@
             justify-content: space-between;
             margin-top: 20px;
             text-align: left;
+            padding-left: 40px;
         }
 
-        .right-section {
+        .links-section {
             flex: 1;
-            margin-left: 20px;
+            margin-left: 15px;
             text-align: left;
         }
 
-        .right-section h2 {
+        .links-section h2 {
             text-align: left;
             font-size: 1.2rem;
-            margin: 0;
+            margin: 0 0 8px 0;
+            color: #2c3e50;
         }
 
-        .right-section p {
-            margin: 5px 0;
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .link-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 18px;
+        }
+
+        .link-left {
+            text-align: left;
+            flex: 1;
+        }
+
+        .link-right {
+            text-align: left;
+            flex: 1;
+            padding-left: 5px;
+            margin-left: -40px;
+        }
+
+        .links-section a {
+            color: #333;
+            text-decoration: none;
             font-size: 0.9rem;
         }
 
-        .center-text {
-            text-align: center !important;
-            font-weight: bold !important;
-            color: black !important;
-            margin: 5px 0;
+        .links-section a:hover {
+            color: #a8822b;
+            text-decoration: underline;
         }
 
-        .dpp-section {
-            text-align: center;
-            margin-top: 20px;
+        .contact-info {
+            margin-top: 6px;
+        }
+
+        .contact-info p {
+            margin: 2px 0;
+            line-height: 1.2;
+            font-size: 0.9rem;
         }
 
         .bottom-buttons {
@@ -286,11 +317,18 @@
 
             .links {
                 flex-direction: column;
+                padding-left: 20px;
             }
 
-            .right-section {
+            .links-section {
                 margin-left: 0;
-                margin-top: 20px;
+                margin-top: 15px;
+            }
+
+            .link-right {
+                margin-left: 0;
+                text-align: center;
+                padding-left: 0;
             }
         }
 
@@ -365,34 +403,73 @@
                 <img src="https://i.postimg.cc/SKC7Wqhm/Screenshot-com-android-chrome.png" alt="بانر الموقع" class="banner">
             </div>
         </div>
-        <div class="right-section">
+
+        <!-- Useful Links Section -->
+        <div class="links-section">
             <h2>Useful Links</h2>
-            <p><a href="#">Home</a></p>
-            <p><a href="#">Point Of Sales</a></p>
-            <p><a href="#">Contact Us</a></p>
+            <div class="links-grid">
+                <div class="link-row">
+                    <div class="link-left"><a href="#">Home</a></div>
+                    <div class="link-right"><strong>DPP</strong></div>
+                </div>
+                <div class="link-row">
+                    <div class="link-left"><a href="#">Point Of Sales</a></div>
+                    <div class="link-right"></div>
+                </div>
+                <div class="link-row">
+                    <div class="link-left"><a href="#">Contact Us</a></div>
+                    <div class="link-right"></div>
+                </div>
+            </div>
         </div>
-        <div class="dpp-section">
-            <p class="center-text">DPP</p>
-            <p class="center-text">iPod</p>
-            <p class="center-text">Apple TV</p>
-            <p class="center-text">Apple Watch TV</p>
-        </div>  
-        <div class="right-section">
+
+        <!-- Products Section -->
+        <div class="links-section">
             <h2>Products</h2>
-            <p><a href="#">iPhone</a></p>
-            <p><a href="#">Mac</a></p>
-            <p><a href="#">iPad</a></p>
+            <div class="links-grid">
+                <div class="link-row">
+                    <div class="link-left"><a href="#">iPhone</a></div>
+                    <div class="link-right"><a href="#">iPad</a></div>
+                </div>
+                <div class="link-row">
+                    <div class="link-left"><a href="#">Mac</a></div>
+                    <div class="link-right"><a href="#">Apple TV</a></div>
+                </div>
+                <div class="link-row">
+                    <div class="link-left"><a href="#">iPod</a></div>
+                    <div class="link-right"><a href="#">Apple Watch</a></div>
+                </div>
+            </div>
         </div>
-        <div class="right-section">
+
+        <!-- Information Section -->
+        <div class="links-section">
             <h2>Information</h2>
-            <p><a href="##">Learn How</a></p>
-            <p><a href="##">Service Providers</a></p>
-            <p><a href="##">Contact Us</a></p>
+            <div class="links-grid">
+                <div class="link-row">
+                    <div class="link-left"><a href="#">Learn How</a></div>
+                    <div class="link-right"><a href="#">Terms and condition</a></div>
+                </div>
+                <div class="link-row">
+                    <div class="link-left"><a href="#">Service Providers</a></div>
+                    <div class="link-right"><a href="#">Condition</a></div>
+                </div>
+            </div>
         </div>
-        <div class="right-section">
+
+        <!-- Support and Sales Section -->
+        <div class="links-section">
             <h2>Support and Sales</h2>
-            <p><a href="#">For Maintenance: Visit AC-Care</a></p>
-            <p><a href="#">For Individual Sales: Point of Sales</a></p>
+            <div class="contact-info">
+                <p><strong>For Maintenance:</strong></p>
+                <p><a href="#">Visit AC-Care</a></p>
+                
+                <p><strong>For Individual Sales:</strong></p>
+                <p><a href="#">Point of Sales</a></p>
+                
+                <p><strong>For corporate or channels sales:</strong></p>
+                <p><a href="mailto:sales@arabcomputers.com.sa">sales@arabcomputers.com.sa</a></p>
+            </div>
         </div>
     </div>
 
